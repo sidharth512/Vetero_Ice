@@ -1,0 +1,37 @@
+package viacom_002.TestCases;
+
+
+
+
+
+import org.junit.Assert;
+import org.testng.annotations.Test;
+
+import viacom_001.POM.ViacomHomePage;
+import viacom_001.POM.ViacomSearchPage;
+
+
+public class TC_veiacom_001 extends BaseClass
+{
+	@Test
+	public void viacomHome() throws Exception {
+	
+		ViacomHomePage link=new ViacomHomePage(driver);
+link.searchbarmehod(name);
+
+link.searchbuttonmethod();
+
+link.SortbyListMethod();
+if(driver.getTitle().contains("Low Prices")) {
+	Assert.assertTrue(true);
+}
+else {
+	Assert.assertTrue(false);
+}
+	
+ViacomSearchPage choice=new ViacomSearchPage(driver);
+choice.VeacomSearchpageMethod();
+}
+	}	
+
+

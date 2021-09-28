@@ -1,0 +1,25 @@
+package viacom_002.TestCases;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+
+public class BaseClass {
+	public String baseURL="https://www.snapdeal.com/";
+	public String name="samsung android phone";
+	public WebDriver driver;
+	@BeforeClass
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver", "./Drivers\\chromedriver.exe");
+		driver=new ChromeDriver();
+	}
+	@BeforeMethod
+	public void Runurl() {
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		driver.get(baseURL);
+	}
+	
+}

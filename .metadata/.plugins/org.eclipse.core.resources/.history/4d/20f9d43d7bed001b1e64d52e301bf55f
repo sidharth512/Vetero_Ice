@@ -1,0 +1,23 @@
+package viacom_002.TestCases;
+
+import org.testng.annotations.Test;
+
+import viacom_001.POM.ViacomHomePage;
+
+
+public class TC_veiacom_001 extends BaseClass
+{
+	@Test
+	public void viacomHome() throws Exception {
+		driver.get(baseURL);
+		ViacomHomePage link=new ViacomHomePage(driver);
+link.searchbarmehod(name);
+Thread.sleep(5000);
+link.searchbuttonmethod();
+Thread.sleep(8000);
+link.SortbyListMethod();
+		
+	
+	
+	}
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-21T11:10:36 IST" name="Default suite" finished-at="2021-07-21T11:11:35 IST" duration-ms="58694">
+    <groups>
+    </groups>
+    <test started-at="2021-07-21T11:10:36 IST" name="Default test" finished-at="2021-07-21T11:11:35 IST" duration-ms="58694">
+      <class name="test.TestCreateCustomer">
+        <test-method signature="creatcustomer()[pri:0, instance:test.TestCreateCustomer@5e600dd5]" started-at="2021-07-21T11:10:37 IST" name="creatcustomer" finished-at="2021-07-21T11:11:35 IST" duration-ms="58425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatcustomer -->
+      </class> <!-- test.TestCreateCustomer -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

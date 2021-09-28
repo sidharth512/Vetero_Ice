@@ -1,0 +1,16 @@
+package viacom_002.TestCases;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+
+public class BaseClass {
+	public String baseURL="https://www.snapdeal.com/";
+	public String name="samsung android phone";
+	public WebDriver driver;
+	@BeforeClass
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver", "./Drivers\\chromedriver.exe");
+		driver=new ChromeDriver();
+	}
+}

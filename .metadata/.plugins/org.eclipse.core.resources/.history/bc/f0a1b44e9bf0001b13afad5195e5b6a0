@@ -1,0 +1,28 @@
+package viacom_002.TestCases;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+
+import viacom_001.utility.Readconfig;
+
+public class BaseClass {
+	Readconfig read=new Readconfig();
+	public String baseURL=read.geturl();
+	public String name=read.searchObject();
+	public WebDriver driver;
+	@BeforeClass
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver", read.chromepath());
+		driver=new ChromeDriver();
+	}
+	@BeforeMethod
+	public void Runurl() {
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		driver.get(baseURL);
+	}
+	
+}

@@ -1,0 +1,15 @@
+package viacom_002.TestCases;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
+
+public class TC_veiacom_001 {
+	public String baseURL="https://www.snapdeal.com/";
+	public WebDriver Driver;
+	@BeforeClass
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver", "");
+		
+	}
+
+}

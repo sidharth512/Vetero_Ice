@@ -1,0 +1,15 @@
+1625469500829	Delete element
+1625477693831	Rename type 'IoginBaseClass'
+1625496232075	Rename package 'com.inetbanking.PageObjects'
+1625496442061	Rename package 'com.inetbanking.testCases'
+1625496472409	Rename package 'com.inetbanking.testData'
+1625497153838	Rename package 'com.inetbanking.utility'
+1625754210173	Rename type 'ActitimeHomePage'
+1625756248991	Rename type 'ActiTimeTaskPage'
+1625841609806	Delete element
+1625841758174	Rename type 'CustomerPage'
+1625843052864	Delete element
+1625843260828	Rename type 'SettingPage'
+1625850589180	Delete element
+1625850654533	Delete element
+1625851173243	Rename type 'TypesofWorkpage'
